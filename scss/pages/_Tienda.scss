@@ -1,0 +1,64 @@
+
+/* diseño tienda */
+.tienda--h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 5px;
+    grid-template-areas:
+      "conteiner--area1 conteiner--area2 conteiner--area3"
+      "conteiner--area1 conteiner--area2 conteiner--area3"
+      "conteiner--area1 conteiner--area2 conteiner--area3";
+    justify-content: space-around;
+    align-content: center;
+  
+    .container--area1 {
+      grid-area: conteiner--area1;
+    }
+  
+    .container--area2 {
+      grid-area: conteiner--area2;
+    }
+  
+    .container--area3 {
+      grid-area: conteiner--area3;
+    }
+  }
+  
+  .card-img-top {
+    border-radius: 15px;
+  }
+  
+  .card-body {
+    background-color: #1d1e1e;
+    border: 0.5px solid #fff5dd;
+    border-radius: 10px;
+  
+    .card-text {
+      color: #fff5dd;
+    }
+  
+    .card-title {
+      color: #fff5dd;
+    }
+  
+    .btn.btn-primary {
+      background-color: #edc454;
+      color: #1d1e1e;
+      border: none;
+  
+      &:hover {
+        background-color: #caac57;
+        color: #000000;
+      }
+    }
+  }
+  

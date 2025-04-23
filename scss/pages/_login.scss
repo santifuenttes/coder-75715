@@ -1,0 +1,75 @@
+
+
+/* diseño login*/
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+.login--h2{
+    font-family: serif;
+    font-size: 4em;
+    margin-top:50px;
+}
+.login--div2 {
+    margin-bottom: 40px;
+    font-family: serif;
+    font-size: 1.1em;
+}
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+.form--input{
+    font-family:serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #edc454;
+    padding: 10px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    border-bottom: 2px solid #edc454;
+    background: transparent; 
+
+}
+
+.form--submit{
+    font-family: serif;
+    font-size: 1.1em;
+    color: #1d1e1e;
+    background: #edc454;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 40px;
+    width: 20%;
+    
+
+    &:hover{
+    color: #000000;
+    background-color:#caac57 ;
+}
+}
+}
+
+
+
+.login--cuenta{
+    display: flex;
+    justify-content: center;
+
+.login--cuenta__enlace{
+    color: #edc454;
+}
+.login--cuenta__enlace:hover{
+    color:#caac57;
+    transition: .5s;
+}
+}

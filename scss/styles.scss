@@ -1,0 +1,14 @@
+
+/*imports layouts*/
+@use"./layout/reset";
+@use"./layout/nav";
+@use"./layout/footer";
+
+
+
+
+/*imports pages*/
+@use"./pages/index";
+@use"./pages/SobreMi";
+@use"./pages/Tienda";
+@use"./pages/login";

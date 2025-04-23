@@ -1,0 +1,86 @@
+
+
+/* diseño navegador - header*/
+
+@media screen and (max-width:576px) {
+    .header{
+        font-size: .5em;
+    }
+}
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+
+&:hover{
+    backdrop-filter: blur(10px);
+    background: rgba(255, 250, 233, .059);
+}
+
+.header--nav{ 
+    font-size: 1.2em;
+    font-family: serif ;
+    max-width: 1440px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+
+
+.header--nav__enlace{
+    padding: 5px;
+    text-decoration: none;
+    color: #fff5dd;
+    margin: 10px;
+    
+
+&:hover{
+    color: #edc454;
+    transition: .5s;
+}
+}
+
+.header--nav__enlace:nth-child(4){
+    border: 1px solid #fff5dd;
+    border-radius: 10px;
+    padding: 8px;
+    color:#fff5dd;
+    background-color:transparent;
+
+&:nth-child(4):hover{
+    box-shadow: 2px 2px 2px #fff5dd;
+    color:#edc454;
+    transition: .5s;
+    margin-top: 5px;
+    margin-left: 5px; 
+}
+} 
+}
+
+
+/* diseño h1*/
+
+h1{
+    display: flex;
+    font-family: serif;
+    font-size: 3em;
+    max-width: 1440px;
+    margin: 20px auto;
+    
+}
+
+
+.header--h1{
+    text-decoration: none;
+    color: #fff5dd;
+    margin: 10px;
+
+&:hover{
+    color: #edc454;
+    transition: .5s;
+}
+}
+
+}

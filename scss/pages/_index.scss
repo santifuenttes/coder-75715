@@ -1,0 +1,50 @@
+
+
+/* diseño index */
+
+
+.article--h4{
+    font-size: 3em ;
+    font-family: serif ;
+    text-align: center;
+    border-radius: 10px ;
+    margin: 10px;
+    padding: 5px ;
+
+.article--h4__parrafo{
+        font-family:serif;
+            
+}
+}
+
+
+.imagen {
+    margin: auto;
+    
+    
+.img--index {
+    width: 100%;;
+    border-radius: 20px;
+    
+}
+}
+
+.section--imagenes{
+    width: 40%;
+    height: 40vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    
+    .section--imagenes__scroll{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .section--imagenes__scroll img {
+        flex: 0 0 100%;
+        height: 100%;
+        object-fit: cover;
+        scroll-snap-align: start;
+}
+}

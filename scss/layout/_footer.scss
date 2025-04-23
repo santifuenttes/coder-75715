@@ -1,0 +1,69 @@
+
+
+/*diseño footer*/
+
+
+
+
+.footer{
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 100vh ;
+    border-top: 3px solid lightgrey;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer--section {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2rem;
+    
+}
+
+.footer--section__nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.footer--section__h2{
+    @extend .footer--section;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+
+.footer--section__redes{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.footer--section__enlaces{
+    text-decoration: none;
+    color: #fff5dd;
+    margin: 10px;
+
+
+    &:hover{
+    color: #edc454;
+    transition: .5s;
+}
+}
+
+i{
+    text-align: center;
+}
+
+
+@media screen and (max-width:576px) {
+    .footer{
+        font-size: .5em;
+    }
+}
+
