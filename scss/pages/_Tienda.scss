@@ -1,10 +1,22 @@
 
+/*fonts*/
+$font-primary:inter;
+$font-secondary:italic;
+
+/*color*/
+$color-primary:#fff5dd;
+$color-secondary:#edc454;
+
+
+
 /* diseño tienda */
+
 .tienda--h2 {
     display: flex;
     justify-content: center;
-    font-size: 3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    margin: 10px;
+    font-family: $font-primary;
   }
   
   .container {
@@ -39,19 +51,20 @@
   
   .card-body {
     background-color: #1d1e1e;
-    border: 0.5px solid #fff5dd;
+    border: 0.5px solid $color-primary;
     border-radius: 10px;
+    font-family: $font-primary;
   
     .card-text {
-      color: #fff5dd;
+      color: $color-primary;
     }
   
     .card-title {
-      color: #fff5dd;
+      color: $color-primary;
     }
   
     .btn.btn-primary {
-      background-color: #edc454;
+      background-color: $color-secondary;
       color: #1d1e1e;
       border: none;
   
@@ -60,5 +73,64 @@
         color: #000000;
       }
     }
+    .card--info{
+      text-align: center;
+      color: $color-primary;
+    }
   }
   
+  /* RESPONSIVO */
+
+@media (max-width: 1024px) {
+  .tienda--h2 {
+    font-size: 2rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "conteiner--area1 conteiner--area2"
+      "conteiner--area1 conteiner--area2"
+      "conteiner--area3 conteiner--area3";
+  }
+
+  .card-body {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .tienda--h2 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "conteiner--area1"
+      "conteiner--area2"
+      "conteiner--area3";
+  }
+
+  .card-body {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  .tienda--h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "conteiner--area1"
+      "conteiner--area2"
+      "conteiner--area3";
+  }
+
+  .card-body {
+    font-size: 0.8em;
+  }
+}

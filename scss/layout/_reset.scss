@@ -1,11 +1,19 @@
 
+/*fonts*/
+$font-primary:inter;
+$font-secondary:italic;
+
+/*color*/
+$color-primary:#fff5dd;
+$color-secondary:#edc454;
+
 /*diseño body*/
 
 #body {
     margin: 0 auto;
     width: 100%;
     background-color: #1d1e1e;
-    color: #fff5dd;
+    color: $color-primary;
     
 }
 
@@ -16,8 +24,4 @@
     min-height: 100vh ;
     
 }
-@media screen and (max-width:576px){
-    .main{
-        font-size: 1em;
-    }
-}
+

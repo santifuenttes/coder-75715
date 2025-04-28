@@ -1,4 +1,11 @@
 
+/*fonts*/
+$font-primary:inter;
+$font-secondary:italic;
+
+/*color*/
+$color-primary:#fff5dd;
+$color-secondary:#edc454;
 
 /* diseño login*/
 
@@ -6,16 +13,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    
 
 .login--h2{
-    font-family: serif;
+    font-family: $font-primary;
     font-size: 4em;
     margin-top:50px;
+    text-align: center;
 }
 .login--div2 {
     margin-bottom: 40px;
-    font-family: serif;
+    font-family: $font-secondary;
     font-size: 1.1em;
+    text-align: center;
 }
 }
 
@@ -27,24 +38,24 @@
 
 
 .form--input{
-    font-family:serif;
+    font-family:$font-primary;
     font-size: 1.2em;
     text-align: center;
-    color: #edc454;
+    color: $color-secondary;
     padding: 10px;
     margin: 15px;
-    width: 30%;
+    width: 15em;
     border: none;
-    border-bottom: 2px solid #edc454;
+    border-bottom: 2px solid $color-secondary;
     background: transparent; 
 
 }
 
 .form--submit{
-    font-family: serif;
+    font-family: $font-primary;
     font-size: 1.1em;
     color: #1d1e1e;
-    background: #edc454;
+    background: $color-secondary;
     border: none;
     border-radius: 5px;
     padding: 5px;
@@ -64,12 +75,82 @@
 .login--cuenta{
     display: flex;
     justify-content: center;
+    text-align: center;
+    font-family: $font-primary;
 
-.login--cuenta__enlace{
-    color: #edc454;
-}
-.login--cuenta__enlace:hover{
+&__enlace{
+    color: $color-secondary;
+
+&:hover{
     color:#caac57;
     transition: .5s;
 }
+}
+}
+
+/* RESPONSIVO */
+
+/* Pantallas M */
+@media (max-width: 1024px) {
+    .login--h2 {
+    font-size: 2.5em;
+    }
+
+    .form--input {
+    width: 60%;
+    font-size: 1.1em;
+    }
+
+    .form--submit {
+    width: 40%;
+    font-size: 1em;
+    }
+
+    .login--div2 {
+    font-size: 1em;
+    }
+}
+
+  /* Pantallas S) */
+@media (max-width: 768px) {
+    .login--h2 {
+    font-size: 1.5em;
+    margin-top: 20px;  
+    }
+
+    .form--input {
+    width: 70%;
+    font-size: 1em;
+    }
+
+    .form--submit {
+    width: 50%;
+    font-size: 1em;
+    }
+
+    .login--div2 {
+    font-size: 0.9em;
+    }
+}
+
+  /* Pantallas XS */
+@media (max-width: 480px) {
+    .login--h2 {
+    font-size: 1em;
+    margin-top: 10px;  
+    }
+
+    .form--input {
+    width: 70%;
+    font-size: 0.9em;
+    }
+
+    .form--submit {
+    width: 80%;
+    font-size: 0.9em;
+    }
+
+    .login--div2 {
+    font-size: 0.8em;
+    }
 }

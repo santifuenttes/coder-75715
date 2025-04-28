@@ -1,69 +1,93 @@
 
+/*fonts*/
+$font-primary:inter;
+$font-secondary:italic;
+
+/*color*/
+$color-primary:#fff5dd;
+$color-secondary:#edc454;
+
 
 /*diseño footer*/
 
-
-
-
-.footer{
+.footer {
     margin: 0 auto;
     max-width: 1440px;
-    min-height: 100vh ;
+    min-height: 100vh;
     border-top: 3px solid lightgrey;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; 
+    
+    @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding: 2rem 0;
+    }
 }
 
 .footer--section {
     display: flex;
     align-items: flex-start;
     margin-top: 2rem;
-    
+    font-family: $font-primary;
+
+    @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    }
 }
 
-.footer--section__nav{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.footer--section__nav {
+    font-family: $font-primary;
     display: flex;
     flex-direction: column;
-    
+    align-items: flex-start;
+
+    @media (max-width: 768px) {
+    align-items: center;
+    }
 }
 
-
-.footer--section__h2{
+.footer--section__h2 {
     @extend .footer--section;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    text-decoration: none;
+    color: $color-primary;
+
+    &:hover {
+    color: $color-secondary;
+    transition: 0.5s;
+    }
 }
 
-
-
-.footer--section__redes{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.footer--section__redes {
+    font-family: $font-primary;
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+
+    @media (max-width: 768px) {
+    align-items: center;
+    margin-top: 1rem;
+    }
 }
 
-.footer--section__enlaces{
+.footer--section__enlaces {
     text-decoration: none;
-    color: #fff5dd;
+    color: $color-primary;
     margin: 10px;
 
-
-    &:hover{
-    color: #edc454;
-    transition: .5s;
+    &:hover {
+    color: $color-secondary;
+    transition: 0.5s;
+    }
 }
-}
 
-i{
+i {
     text-align: center;
 }
 
-
-@media screen and (max-width:576px) {
-    .footer{
-        font-size: .5em;
-    }
-}
 
