@@ -56,9 +56,9 @@ $color-secondary:#edc454;
 &:nth-child(4):hover{
     box-shadow: 2px 2px 2px #fff5dd;
     color:$color-secondary;
-    transition: .5s;
-    margin-top: 5px;
-    margin-left: 5px; 
+    transition: .3s;
+    transform: translateY(-3px);
+    
 }
 } 
 }

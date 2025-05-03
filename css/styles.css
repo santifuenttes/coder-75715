@@ -63,9 +63,8 @@
 .header .header--nav .header--nav__enlace:nth-child(4):nth-child(4):hover {
   box-shadow: 2px 2px 2px #fff5dd;
   color: #edc454;
-  transition: 0.5s;
-  margin-top: 5px;
-  margin-left: 5px;
+  transition: 0.3s;
+  transform: translateY(-3px);
 }
 .header h1 {
   display: flex;
@@ -209,6 +208,7 @@ i {
 .inicio--h4 {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-size: 3em;
   font-family: "$font-primary", serif;
   font-weight: 500;
