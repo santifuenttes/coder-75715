@@ -30,6 +30,7 @@
   top: 0;
   /* diseño h1*/
   /* RESPONSIVE */
+  /*MENÚ*/
 }
 .header:hover {
   backdrop-filter: blur(10px);
@@ -65,6 +66,20 @@
   color: #edc454;
   transition: 0.3s;
   transform: translateY(-3px);
+}
+.header--toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff5dd;
+  cursor: pointer;
+  align-self: center;
+  margin: 0 auto;
+}
+.header--toggle:hover {
+  color: #edc454;
+  transition: 0.5s;
 }
 .header h1 {
   display: flex;
@@ -114,6 +129,29 @@
   }
   .header h1 {
     font-size: 1.5em;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header--toggle {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .header .header--nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .header .header--nav.show {
+    display: flex;
+  }
+  .header .header--nav__enlace {
+    margin: 10px 20px;
   }
 }
 

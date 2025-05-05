@@ -33,6 +33,7 @@ $color-secondary:#edc454;
     align-items: center;
 
 
+
 .header--nav__enlace{
     padding: 5px;
     text-decoration: none;
@@ -62,6 +63,21 @@ $color-secondary:#edc454;
 }
 } 
 }
+&--toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: $color-primary;
+    cursor: pointer;
+    align-self:center;
+    margin: 0 auto;
+
+    &:hover{
+        color: $color-secondary;
+        transition: .5s;
+    }
+}
 
 
 /* diseño h1*/
@@ -85,7 +101,9 @@ h1{
     color: $color-secondary;
     transition: .5s;
 }
+
 }
+
 
 
  /* RESPONSIVE */
@@ -124,6 +142,35 @@ h1{
 
     h1 {
     font-size: 1.5em;
+    }
+}
+
+/*MENÚ*/
+
+@media (max-width: 768px) {
+    
+    flex-direction: column;
+    align-items: center;
+
+    &--toggle {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+    }
+
+    .header--nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+
+    &.show {
+        display: flex;
+    }
+
+    &__enlace {
+        margin: 10px 20px;
+    }
     }
 }
 }
